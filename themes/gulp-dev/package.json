@@ -1,13 +1,21 @@
 {
   "name": "tutorials-theme",
-  "version": "0.0.1",
-  "description": "Group project for msh7 tutorials ",
+  "version": "1.0.0",
+  "description": "A custom wordpress theme for MSH7 Tutorials",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikesth007/msh7tutorials"
+  },
   "author": "Team 08",
-  "license": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mikesth007/msh7tutorials/issues"
+  },
+  "homepage": "https://github.com/mikesth007/msh7tutorials",
   "devDependencies": {
     "autoprefixer": "^6.5.2",
     "browser-sync": "^2.17.6",

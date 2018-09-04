@@ -145,18 +145,18 @@ function tutorials_theme_fonts_url() {
      * supported by Lato and MPLUS, translate this to 'off'. Do not translate
      * into your own language.
      */
-    $lato = _x( 'on', 'Lato font: on or off', 'tutorials-theme' );
-    $mplus = _x( 'on', 'M plus font: on or off', 'tutorials-theme' );
+    $merriweather = _x( 'on', 'Merriweather font: on or off', 'tutorials-theme' );
+    $roboto = _x( 'on', 'Roboto font: on or off', 'tutorials-theme' );
 
     $font_families = array();
-    if ( 'off' !== $lato ) {
-        $font_families[] = 'Lato:400,700';
+    if ( 'off' !== $merriweather ) {
+        $font_families[] = 'Merriweather:400,700';
     }
-    if ('off' !== $mplus) {
-        $font_families[] = 'M+PLUS+Rounded+1c:400,500';
+    if ('off' !== $roboto) {
+        $font_families[] = 'Roboto:400,400i,500,500i';
     }
 
-    if (in_array('on', array($lato, $mplus))) {
+    if (in_array('on', array($merriweather, $roboto))) {
         $query_args = array(
             'family' => urlencode( implode( '|', $font_families ) ),
             'subset' => urlencode( 'latin,latin-ext' ),

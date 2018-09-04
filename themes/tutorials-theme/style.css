@@ -386,7 +386,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: "Lato", "Times New Roman", Times, serif;
+	font-family: "Merriweather", "Times New Roman", Times, serif;
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.5;
@@ -406,7 +406,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: "M PLUS Rounded lc", "Lucida Sans", Arial, sans-serif;
+	font-family: "Roboto", "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -884,7 +884,7 @@ a:hover, a:active {
 .site-header {
 	position: relative;
 	padding: 1em;
-	font-family: "M PLUS Rounded lc", "Lucida Sans", Arial, sans-serif;
+	font-family: "Roboto", "Lucida Sans", Arial, sans-serif;
 	color: #fff;
 	background-color: #002299;
 }

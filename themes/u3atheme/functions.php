@@ -120,7 +120,13 @@ add_action( 'widgets_init', 'u3atheme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function u3atheme_scripts() {
+    wp_enqueue_style('u3atheme-fonts', u3atheme_fonts_url());
+    
 	wp_enqueue_style( 'u3atheme-style', get_stylesheet_uri() );
+
+	//wp_enqueue_style( 'u3atheme-fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
+
+	//wp_enqueue_style("bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 
 	wp_enqueue_script( 'u3atheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -131,6 +137,62 @@ function u3atheme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'u3atheme_scripts' );
+
+/**
+ * Register custom fonts.
+ */
+function u3atheme_fonts_url() {
+    $fonts_url = '';
+
+    /*
+     * Translators: If there are characters in your language that are not
+     * supported by Lato and MPLUS, translate this to 'off'. Do not translate
+     * into your own language.
+     */
+    $merriweather = _x( 'on', 'Merriweather font: on or off', 'u3atheme' );
+    $roboto = _x( 'on', 'Roboto font: on or off', 'u3atheme' );
+
+    $font_families = array();
+    if ( 'off' !== $merriweather ) {
+        $font_families[] = 'Merriweather:400,700';
+    }
+    if ('off' !== $roboto) {
+        $font_families[] = 'Roboto:400,400i,500,500i';
+    }
+
+    if (in_array('on', array($merriweather, $roboto))) {
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+
+        $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+    }
+
+    return esc_url_raw( $fonts_url );
+}
+
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since Twenty Seventeen 1.0
+ *
+ * @param array  $urls           URLs to print for resource hints.
+ * @param string $relation_type  The relation type the URLs are printed.
+ * @return array $urls           URLs to print for resource hints.
+ */
+function u3atheme_resource_hints( $urls, $relation_type ) {
+    if ( wp_style_is( 'u3atheme-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+        $urls[] = array(
+            'href' => 'https://fonts.gstatic.com',
+            'crossorigin',
+        );
+    }
+
+    return $urls;
+}
+add_filter( 'wp_resource_hints', 'u3atheme_resource_hints', 10, 2 );
+
 
 /**
  * Implement the Custom Header feature.

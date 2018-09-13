@@ -55,6 +55,7 @@
 
 		&:hover > a,
 		&.focus > a {
+			border-bottom: 2px solid blue;
 		}
 	}
 

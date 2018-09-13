@@ -1,4 +1,4 @@
-var themename = 'tutorials-theme';
+var themename = 'u3atheme';
 
 var gulp = require('gulp'),
 	// Prepare and optimize code etc
@@ -59,7 +59,7 @@ gulp.task('watch', function() {
 	browserSync.init({ 
 		open: 'external',
 		proxy: 'localhost/u3atownsville',
-		port: 8080
+		//port: 8080
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);

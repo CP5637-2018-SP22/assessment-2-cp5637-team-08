@@ -1,23 +1,23 @@
 /*!
 Theme Name: u3atheme
-Theme URI: http://underscores.me/
-Author: Team-08
-Author URI: http://underscores.me/
-Description: Custom wordpress theme for u3a by team 08
+Theme URI: https://github.com/mor10/u3atheme/
+Author: Morten Rand-Hendriksen
+Author URI: https://mor10.com/courses
+Description: A new theme for a new time. This theme showcases the best of WordPress and Underscores and is the project for the Building Themes From Scratch Using Underscores course at LinkedIn Learning and Lynda.com.
 Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: u3atheme
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-u3atheme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+u3atheme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -86,14 +86,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 @import "site/site";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
 
 /*--------------------------------------------------------------
 # Infinite scroll

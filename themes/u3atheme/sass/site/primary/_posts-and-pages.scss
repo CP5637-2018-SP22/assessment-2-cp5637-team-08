@@ -67,7 +67,7 @@
 
 .byline {
 	&::after {
-		content: "|";
+		content: ".";
 		margin: 0 .5em;
 	}
 }
@@ -75,7 +75,7 @@
 .comments-link,
 .edit-link {
 	&::before {
-		content: "|";
+		content: ".";
 		margin: 0 .5em;
 	}
 }

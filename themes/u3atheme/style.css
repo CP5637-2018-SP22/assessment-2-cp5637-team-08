@@ -575,11 +575,11 @@ a {
 }
 
 a:visited {
-	color: #88BCA0;
+	color: darkgrey;
 }
 
 a:hover, a:focus, a:active {
-	color: #b51c35;
+	color: #88bc51;
 }
 
 a:focus {
@@ -595,7 +595,7 @@ a:hover, a:active {
 .entry-summary a,
 .comment-content a {
 	text-decoration: none;
-	border-bottom: 3px solid #b51c35;
+	border-bottom: 3px solid #88bc51;
 }
 
 .page-content a:focus, .page-content a:hover,
@@ -605,7 +605,7 @@ a:hover, a:active {
 .entry-summary a:hover,
 .comment-content a:focus,
 .comment-content a:hover {
-	color: #b51c35;
+	color: #88bc51;
 }
 
 /*--------------------------------------------------------------
@@ -641,8 +641,8 @@ a:hover, a:active {
 .paging-navigation a:hover,
 .paging-navigation a:focus {
 	color: white;
-	border-color: #b51c35;
-	background: #b51c35;
+	border-color: #88bc51;
+	background: #88bc51;
 }
 
 .nav-links {
@@ -701,7 +701,7 @@ a:hover, a:active {
 .post-navigation .post-title {
 	font-size: 1.2em;
 	font-weight: 700;
-	border-bottom: 3px solid #b51c35;
+	border-bottom: 3px solid #88bc51;
 }
 
 .post-navigation a:hover .post-title,
@@ -734,12 +734,12 @@ a:hover, a:active {
 
 .pagination a:focus, .pagination a:hover {
 	color: white;
-	background: #b51c35;
+	background: #88bc51;
 }
 
 .pagination .current {
 	font-weight: 600;
-	color: #b51c35;
+	color: #88bc51;
 }
 
 .pagination .prev .icon {
@@ -962,7 +962,7 @@ a:hover, a:active {
 	padding: 1em 2em;
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 	color: white;
-	background: #b51c35;
+	background: #88bc51;
 }
 
 .search input[type="search"],
@@ -1016,14 +1016,16 @@ a:hover, a:active {
 .continue-reading a {
 	display: block;
 	padding: .5em 1em;
-	font-size: 90%;
+	color: black;
+	font-size: 80%;
+	font-weight: 700;
 	text-decoration: none;
 	background: #d9d9d9;
 }
 
 .continue-reading a:focus, .continue-reading a:hover {
 	color: white;
-	background: #b51c35;
+	background: #88bc51;
 }
 
 /*--------------------------------------------------------------
@@ -1180,12 +1182,7 @@ Header Menu
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	text-decoration: underline;
-}
-
-.main-navigation .menu-item-has-children,
-.main-navigation .page_item_has_children {
-	min-width: 218px;
+	background-color: #88bc51;
 }
 
 .main-navigation .menu-item-has-children > a,
@@ -1193,14 +1190,14 @@ Header Menu
 	padding-right: 2em;
 }
 
+.main-navigation .menu-item-has-children > a:hover, .main-navigation .menu-item-has-children > a:focus,
+.main-navigation .page_item_has_children > a:hover,
+.main-navigation .page_item_has_children > a:focus {
+	background-color: #88bc51;
+}
+
 button.dropdown-toggle {
-	position: absolute;
-	right: 0;
-	border: none;
-	background: inherit;
-	color: white;
-	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
+	display: none;
 }
 
 .menu-toggle {
@@ -1225,11 +1222,6 @@ button.dropdown-toggle {
 @media screen and (min-width: 600px) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation .menu-item-has-children > a,
-	.main-navigation .page_item_has_children > a {
-		padding-right: 2em;
-		background: rgba(255, 255, 255, 0.1);
 	}
 	.main-navigation ul {
 		display: block;
@@ -1261,13 +1253,10 @@ button.dropdown-toggle {
 		-ms-flex-pack: end;
 		    justify-content: flex-end;
 		padding-top: 0;
-		/* If you want dropdowns to open on hover, uncomment this: */
-		/*
-			li:hover > ul,
+		/*li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}
-			*/
+			}*/
 	}
 }
 
@@ -1294,12 +1283,13 @@ button.dropdown-toggle {
 .cat-links a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #b51c35;
+	color: #88bc51;
 }
 
 .cat-links a:focus, .cat-links a:hover {
-	background-color: #b51c35;
+	background-color: #88bc51;
 	color: white;
+	padding: 5px;
 }
 
 .entry-title {
@@ -1319,7 +1309,7 @@ button.dropdown-toggle {
 }
 
 .entry-title a:focus, .entry-title a:hover {
-	border-bottom: 5px solid #b51c35;
+	border-bottom: 5px solid #88bc51;
 }
 
 .entry-meta,
@@ -1339,7 +1329,7 @@ button.dropdown-toggle {
 .entry-footer a:focus,
 .entry-footer a:hover {
 	color: black;
-	border-bottom: 3px solid #b51c35;
+	border-bottom: 3px solid #88bc51;
 }
 
 .byline::after {
@@ -1383,7 +1373,7 @@ button.dropdown-toggle {
 		border-bottom: 3px solid white;
 	}
 	.no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-		border-bottom-color: #b51c35;
+		border-bottom-color: #88bc51;
 	}
 	.no-sidebar .post-content__wrap .byline,
 	.no-sidebar .post-content__wrap .posted-on,
@@ -1608,8 +1598,8 @@ button.dropdown-toggle {
 
 .reply a:hover, .reply a:focus {
 	color: #fff;
-	background: #b51c35;
-	border-color: #b51c35;
+	background: #88bc51;
+	border-color: #88bc51;
 }
 
 .comment-content ol {
@@ -1622,7 +1612,7 @@ button.dropdown-toggle {
 
 .bypostauthor .avatar {
 	box-sizing: content-box;
-	border: 5px solid #b51c35;
+	border: 5px solid #88bc51;
 	margin-top: -5px;
 	margin-left: -5px;
 }
@@ -1660,8 +1650,8 @@ button.dropdown-toggle {
 
 .comment-form .form-submit input:hover, .comment-form .form-submit input:focus {
 	color: #fff;
-	background: #b51c35;
-	border-color: #b51c35;
+	background: #88bc51;
+	border-color: #88bc51;
 }
 
 .comment-form label {
@@ -1831,7 +1821,7 @@ button.dropdown-toggle {
 }
 
 .widget a:hover, .widget a:focus {
-	border-bottom: 3px solid #b51c35;
+	border-bottom: 3px solid #88bc51;
 }
 
 .widget select {
@@ -2171,7 +2161,7 @@ object {
 }
 
 .gallery-item a:hover img, .gallery-item a:focus img {
-	border-color: #b51c35;
+	border-color: #88bc51;
 }
 
 .gallery-item a img {

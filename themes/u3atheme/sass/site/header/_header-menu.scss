@@ -55,7 +55,7 @@
 
 	a:hover,
 	a:focus {
-		text-decoration: underline;
+		background-color: $color__interactive;
 	}
 
 	.current_page_item > a,
@@ -64,24 +64,18 @@
 	.current-menu-ancestor > a {
 	}
 
-	.menu-item-has-children,
-	.page_item_has_children {
-		min-width: 218px;
-	}
 	.menu-item-has-children > a,
 	.page_item_has_children > a {
 		padding-right: 2em;
+
+		&:hover, &:focus {
+			background-color: $color__interactive;
+		}
 	}
 }
 
 button.dropdown-toggle {
-	position: absolute;
-	right: 0;
-	border: none;
-	background: inherit;
-	color: white;
-	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
+	display:none;
 }
 
 .menu-toggle {
@@ -109,12 +103,6 @@ button.dropdown-toggle {
 	}
 
 	.main-navigation {
-
-		.menu-item-has-children > a,
-		.page_item_has_children > a {
-			padding-right: 2em;
-			background: hsla(0, 0%, 100%, .1);
-		}
 
 		ul {
 			display: block;
@@ -154,14 +142,10 @@ button.dropdown-toggle {
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
-
-			/* If you want dropdowns to open on hover, uncomment this: */
-			/*
-			li:hover > ul,
+			/*li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}
-			*/
+			}*/
 		}
 
 	}

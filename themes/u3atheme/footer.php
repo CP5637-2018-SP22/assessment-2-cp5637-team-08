@@ -35,7 +35,6 @@
 
 			<div class="site-info">
 				<div><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'u3atheme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'u3atheme' ), 'WordPress' ); ?></a></div>
-				<div><?php printf( esc_html__( 'Theme: %1$s by %2$s', 'u3atheme' ), 'u3atheme', '<a href="https://mor10.com/courses" rel="designer">Morten Rand-Hendriksen</a>' ); ?></div>
 			</div><!-- .site-info -->
 		</div><!-- .site-footer__wrap -->
 	</footer><!-- #colophon -->

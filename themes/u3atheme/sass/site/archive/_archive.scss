@@ -103,13 +103,14 @@
 
 .continue-reading {
 	position: absolute;
-	right: 0;
+	left: 0;
 	bottom: 0;
 	font-family: $font__sans;
 	
 	a {
 		display: block;
 		padding: .5em 1em;
+		color: black;
 		font-size: 90%;
 		text-decoration: none;
 		background: hsl(0, 0%, 85%);

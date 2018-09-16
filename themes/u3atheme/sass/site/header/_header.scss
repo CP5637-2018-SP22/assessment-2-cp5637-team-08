@@ -53,8 +53,15 @@
 		
 		&:hover,
 		&:focus {
-			text-decoration: underline;
+			cursor: pointer;
 		}
+	}
+
+	&:after {
+		content: 'Townsville';
+		font-size: 1em;
+		margin: 0 0 0 .2em;
+		color: red;
 	}
 }
 

@@ -571,15 +571,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #88bc51;
+	color: darkblue;
 }
 
 a:visited {
-	color: darkgrey;
+	color: #777;
 }
 
 a:hover, a:focus, a:active {
-	color: #88bc51;
+	color: royalblue;
 }
 
 a:focus {
@@ -595,7 +595,7 @@ a:hover, a:active {
 .entry-summary a,
 .comment-content a {
 	text-decoration: none;
-	border-bottom: 3px solid #88bc51;
+	border-bottom: 3px solid royalblue;
 }
 
 .page-content a:focus, .page-content a:hover,
@@ -605,7 +605,7 @@ a:hover, a:active {
 .entry-summary a:hover,
 .comment-content a:focus,
 .comment-content a:hover {
-	color: #88bc51;
+	color: royalblue;
 }
 
 /*--------------------------------------------------------------
@@ -641,8 +641,9 @@ a:hover, a:active {
 .paging-navigation a:hover,
 .paging-navigation a:focus {
 	color: white;
-	border-color: #88bc51;
-	background: #88bc51;
+	border-color: royalblue;
+	background: royalblue;
+	cursor: pointer;
 }
 
 .nav-links {
@@ -701,12 +702,13 @@ a:hover, a:active {
 .post-navigation .post-title {
 	font-size: 1.2em;
 	font-weight: 700;
-	border-bottom: 3px solid #88bc51;
+	border-bottom: 3px solid royalblue;
 }
 
 .post-navigation a:hover .post-title,
 .post-navigation a:focus .post-title {
 	border-bottom-color: white;
+	cursor: pointer;
 }
 
 .pagination {
@@ -734,12 +736,13 @@ a:hover, a:active {
 
 .pagination a:focus, .pagination a:hover {
 	color: white;
-	background: #88bc51;
+	background: royalblue;
+	cursor: pointer;
 }
 
 .pagination .current {
 	font-weight: 600;
-	color: #88bc51;
+	color: royalblue;
 }
 
 .pagination .prev .icon {
@@ -962,7 +965,7 @@ a:hover, a:active {
 	padding: 1em 2em;
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 	color: white;
-	background: #88bc51;
+	background: royalblue;
 }
 
 .search input[type="search"],
@@ -1025,7 +1028,7 @@ a:hover, a:active {
 
 .continue-reading a:focus, .continue-reading a:hover {
 	color: white;
-	background: #88bc51;
+	background: royalblue;
 }
 
 /*--------------------------------------------------------------
@@ -1095,7 +1098,14 @@ a:hover, a:active {
 }
 
 .site-title a:hover, .site-title a:focus {
-	text-decoration: underline;
+	cursor: pointer;
+}
+
+.site-title:after {
+	content: 'Townsville';
+	font-size: 1em;
+	margin: 0 0 0 .2em;
+	color: red;
 }
 
 .site-description {
@@ -1182,7 +1192,7 @@ Header Menu
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background-color: #88bc51;
+	background-color: royalblue;
 }
 
 .main-navigation .menu-item-has-children > a,
@@ -1193,7 +1203,7 @@ Header Menu
 .main-navigation .menu-item-has-children > a:hover, .main-navigation .menu-item-has-children > a:focus,
 .main-navigation .page_item_has_children > a:hover,
 .main-navigation .page_item_has_children > a:focus {
-	background-color: #88bc51;
+	background-color: royalblue;
 }
 
 button.dropdown-toggle {
@@ -1283,11 +1293,11 @@ button.dropdown-toggle {
 .cat-links a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: #88bc51;
+	color: royalblue;
 }
 
 .cat-links a:focus, .cat-links a:hover {
-	background-color: #88bc51;
+	background-color: royalblue;
 	color: white;
 	padding: 5px;
 }
@@ -1306,10 +1316,11 @@ button.dropdown-toggle {
 .entry-title a {
 	text-decoration: none;
 	color: black;
+	border-bottom: 1px solid royalblue;
 }
 
 .entry-title a:focus, .entry-title a:hover {
-	border-bottom: 5px solid #88bc51;
+	border-bottom: 5px solid royalblue;
 }
 
 .entry-meta,
@@ -1323,23 +1334,24 @@ button.dropdown-toggle {
 	font-weight: 700;
 	text-decoration: none;
 	color: black;
+	border-bottom: 1px solid royalblue;
 }
 
 .entry-meta a:focus, .entry-meta a:hover,
 .entry-footer a:focus,
 .entry-footer a:hover {
 	color: black;
-	border-bottom: 3px solid #88bc51;
+	border-bottom: 3px solid royalblue;
 }
 
 .byline::after {
-	content: "|";
+	content: ".";
 	margin: 0 .5em;
 }
 
 .comments-link::before,
 .edit-link::before {
-	content: "|";
+	content: ".";
 	margin: 0 .5em;
 }
 
@@ -1373,7 +1385,7 @@ button.dropdown-toggle {
 		border-bottom: 3px solid white;
 	}
 	.no-sidebar .post-content__wrap .entry-meta a:hover, .no-sidebar .post-content__wrap .entry-meta a:focus {
-		border-bottom-color: #88bc51;
+		border-bottom-color: royalblue;
 	}
 	.no-sidebar .post-content__wrap .byline,
 	.no-sidebar .post-content__wrap .posted-on,
@@ -1598,8 +1610,8 @@ button.dropdown-toggle {
 
 .reply a:hover, .reply a:focus {
 	color: #fff;
-	background: #88bc51;
-	border-color: #88bc51;
+	background: royalblue;
+	border-color: royalblue;
 }
 
 .comment-content ol {
@@ -1612,7 +1624,7 @@ button.dropdown-toggle {
 
 .bypostauthor .avatar {
 	box-sizing: content-box;
-	border: 5px solid #88bc51;
+	border: 5px solid royalblue;
 	margin-top: -5px;
 	margin-left: -5px;
 }
@@ -1650,8 +1662,8 @@ button.dropdown-toggle {
 
 .comment-form .form-submit input:hover, .comment-form .form-submit input:focus {
 	color: #fff;
-	background: #88bc51;
-	border-color: #88bc51;
+	background: royalblue;
+	border-color: royalblue;
 }
 
 .comment-form label {
@@ -1821,7 +1833,7 @@ button.dropdown-toggle {
 }
 
 .widget a:hover, .widget a:focus {
-	border-bottom: 3px solid #88bc51;
+	border-bottom: 3px solid royalblue;
 }
 
 .widget select {
@@ -2161,7 +2173,7 @@ object {
 }
 
 .gallery-item a:hover img, .gallery-item a:focus img {
-	border-color: #88bc51;
+	border-color: royalblue;
 }
 
 .gallery-item a img {

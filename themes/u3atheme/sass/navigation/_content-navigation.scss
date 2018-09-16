@@ -20,6 +20,7 @@
 			color: white;
 			border-color: $color__interactive;
 			background: $color__interactive;
+			cursor: pointer;
 		}
 	}
 	
@@ -88,6 +89,7 @@
 	a:hover .post-title,
 	a:focus .post-title{
 		border-bottom-color: white;
+		cursor: pointer;
 	}
 	
 } 
@@ -115,6 +117,7 @@
 		&:hover {
 			color: white;
 			background: $color__interactive;
+			cursor: pointer;
 		}
 	}
 	

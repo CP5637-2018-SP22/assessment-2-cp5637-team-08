@@ -876,11 +876,11 @@ a:hover, a:active {
 	}
 	.single.has-sidebar .hentry .post-content,
 	.page .hentry .post-content {
-		width: 60%;
+		width: 95%;
 	}
 	.single.has-sidebar .hentry .widget-area,
 	.page .hentry .widget-area {
-		width: 30%;
+		width: 0%;
 	}
 	.page.has-page-sidebar .hentry {
 		-ms-flex-direction: row-reverse;
@@ -903,7 +903,7 @@ a:hover, a:active {
 		width: 20%;
 	}
 	.single.no-sidebar .post-content__wrap .post-content__body {
-		width: 70%;
+		width: 95%;
 	}
 }
 
@@ -939,7 +939,7 @@ a:hover, a:active {
 		    flex: 1 0 100%;
 	}
 	.archive-view.has-sidebar .content-area {
-		width: 60%;
+		width: 100%;
 	}
 	.archive-view.has-sidebar .widget-area {
 		width: 30%;

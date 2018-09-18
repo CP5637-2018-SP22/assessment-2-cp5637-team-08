@@ -34,7 +34,7 @@
 			<?php } ?>
 
 			<div class="site-info">
-				<div><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'u3atheme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'u3atheme' ), 'WordPress' ); ?></a></div>
+				<div><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'u3atheme' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'u3atheme' ), 'WordPress' ); ?></a></div>
 			</div><!-- .site-info -->
 		</div><!-- .site-footer__wrap -->
 	</footer><!-- #colophon -->

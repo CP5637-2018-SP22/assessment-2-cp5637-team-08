@@ -55,7 +55,7 @@
 			<?php
 			$read_more_link = sprintf(
 				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading... %s', 'u3atheme' ), array( 'span' => array( 'class' => array() ) ) ),
+				wp_kses( __( 'Read More... %s', 'u3atheme' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			);
 			?>

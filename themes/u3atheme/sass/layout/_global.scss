@@ -15,7 +15,7 @@
 /* Single posts */
 @media screen and (min-width: $query__medium) {
 	.single.has-sidebar,
-	.page {
+	.page.has-page-sidebar {
 
 		.hentry {
 			display: flex;
@@ -28,11 +28,11 @@
 			}
 
 			.post-content {
-				width: 95%;
+				width: $size__ratio-large;
 			}
 
 			.widget-area {
-				width: 0%;
+				width: $size__ratio-small;
 			}
 		}
 

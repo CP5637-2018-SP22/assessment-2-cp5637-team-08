@@ -14,8 +14,11 @@
 
 		ul {
 			display: none;
-			top: 1.5em;
+			//top: 1.5em;
 			z-index: 99999;
+			position: absolute;
+			left: 0;
+
 
 			ul {
 				top: 0;
@@ -23,6 +26,7 @@
 
 			li {
 				padding-left: 1em;
+				background-color: $color__link;
 
 				&:hover > ul,
 				&.focus > ul {
@@ -32,6 +36,11 @@
 
 			a {
 				width: 200px;
+
+				&:hover,
+				&:focus {
+					background-color: $color__interactive;
+				}
 			}
 		}
 
@@ -66,7 +75,7 @@
 
 	.menu-item-has-children > a,
 	.page_item_has_children > a {
-		padding-right: 2em;
+		//padding-right: 2em;
 
 		&:hover, &:focus {
 			background-color: $color__interactive;
@@ -142,10 +151,10 @@ button.dropdown-toggle {
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
-			/*li:hover > ul,
+			li:hover > ul,
 				li:focus > ul {
 				display: block;
-			}*/
+			}
 		}
 
 	}

@@ -22,8 +22,7 @@ https://github.com/mikesth007/cp5637-team-08 if you want to further improve on i
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-
-##How to
+## How to
 
 ### Change Theme Details
 To change the theme details, you have to go to package.json in the gulp directory or style.css in the root theme
@@ -47,7 +46,21 @@ All the style files are located in the sass directory inside the u3atheme folder
 You can change any scss file and gulp will automatically create the styles.css.map file
 and you can directly see the changes in the browser if you have gulp running with browsersync.
 
-###
+### Main Files
+* _header.php_ - header of the page
+* _footer.php_ - footer of the page
+* _index.php_  - default index/landing page
+* _functions.php_ - All the setup parts for the theme for example - including styles, JavaScripts, configs and so on
+* _page.php_ - Page
+* _single.php_ - Single post
+* _comments.php_ - comments for posts/page
+* _content.php_   - template for displaying posts
+* _content-none.php_ - template for empty posts
+* _content-page.php_ - template for displaying a page
+* _content-single.php_ - template for displaying single post
+* _site.scss_ - main scss file to include all the single scss layouts
+* __sass folder__ - all the scss files in a managed folder structure
+* __variables-site folder__ all variables defined in a single place such as colors, sizes/structures and typography
 
 ## Frequently Asked Questions
 

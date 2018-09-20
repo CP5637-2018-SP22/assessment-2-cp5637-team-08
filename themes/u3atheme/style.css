@@ -1479,6 +1479,10 @@ button.dropdown-toggle {
 	font-family: "Source Sans Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
 
+.more-link {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
